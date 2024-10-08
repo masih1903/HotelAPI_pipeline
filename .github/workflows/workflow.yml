@@ -36,4 +36,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/Javalin-api-pipeline:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/javalin-api-pipeline:latest

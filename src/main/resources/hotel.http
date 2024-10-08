@@ -1,0 +1,89 @@
+
+//Hotel
+
+POST {{URL}}
+Content-Type: application/json
+
+{
+  "name": "Gentofte Hotel",
+  "address": "Gentoftegade 33, 2820 Gentofte",
+  "rooms": [
+    {
+      "number": "191",
+      "price": 800.0
+    },
+    {
+      "number": "510",
+      "price": 275.75
+    },
+    {
+      "number": "666",
+      "price": 2000.0
+    }
+  ]
+}
+
+###
+
+GET {{URL}}/1
+
+###
+
+GET {{URL}}
+
+###
+// Getting all rooms for specific hotel id
+GET {{URL}}/rooms/1
+
+###
+
+PUT {{URL}}/1
+
+{
+  "name": "Gentofte Hotel",
+  "address": "Firskovsvej 49, 2800 Lyngby",
+  "rooms": [
+    {
+      "number": "505",
+      "price": 800.0
+    },
+    {
+      "number": "510",
+      "price": 275.75
+    },
+    {
+      "number": "666",
+      "price": 2000.0
+    }
+  ]
+}
+
+
+###
+
+DELETE {{URL}}/10
+
+###
+
+//Room
+
+POST {{URL}}
+Content-Type: application/json
+
+{
+  "hotelId": 1,
+  "number": "999",
+  "price": 9999.0
+}
+
+###
+
+GET {{URL}}/29
+
+###
+
+GET {{URL}}
+
+###
+
+DELETE {{URL}}/29
